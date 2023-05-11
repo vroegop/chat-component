@@ -1,0 +1,79 @@
+/* Set the background color of the page to a light grey */
+body {
+    background-color: #f1f1f1;
+}
+
+/* Style the chat messages */
+.chat-message {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style the author and message text */
+.author {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+/* Style the label and input for the chat */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+input:disabled {
+    background-color: lightgray;
+}
+
+/* Style the button for sending messages */
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    color: gray;
+    background-color: lightgray;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.audio-icon {
+    position: fixed;
+    left: calc(50% - 30px);
+    top: 40px;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    animation: blink 1s infinite;
+}
+
+#loading-chat {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}

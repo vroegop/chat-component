@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+
+<p id="chat" style="font-family: mono;">
+
+</p>
+
+<label for="chatinput">You:</label>
+<input id="chatinput">
+<button onclick="controller.sendChatMessage(document.getElementById('chatinput').value)" id="chatbutton">Send Message</button>
+
+<script src="script.js"></script>
+</body>
+</html>
