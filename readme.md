@@ -123,3 +123,13 @@ This is not going to work as simple html injection. From another LIT-element thi
           .messages="${history}"
 ></chat-app>
 ```
+
+## I want to set a chat engine
+
+Easy:
+
+```
+<chat-app 
+          engine="gpt-3.5-turbo"
+></chat-app>
+```
