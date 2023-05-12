@@ -37,7 +37,7 @@ class ChatApp extends LitElement {
     connectedCallback() {
         super.connectedCallback();
         this.allPrePrompts = JSON.parse(this.prePrompt.replaceAll('\n', '').replaceAll('  ', ''));
-        this.messages = this.allPrePrompts.filter(m => m.role !== 'system');
+        this.messages = [ ...this.allPrePrompts.filter(m => m.role !== 'system'), ...this.messages ];
         this.systemPrompts = this.allPrePrompts.filter(m => m.role === 'system');
     }
 

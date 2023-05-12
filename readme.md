@@ -85,3 +85,41 @@ Click on Profile
 Create and use the API key from your profile
 
 Use the API key in the HTML and you're done :) Happy voice!
+
+# Advanced stuff
+
+## I want to know the chat content
+
+You can export the chat-messages:
+
+```
+<chat-app 
+          openaiApiKey=" your api key "
+          @new-chat-message="${message => { /** handle stuff **/ } }"
+></chat-app>
+```
+
+Message format:
+
+```
+{
+  role: 'system' | 'assistant' | 'user',
+  content: String
+}
+```
+
+*Note that effectively `system` is never supposed to send a message*
+
+## I want to set a chat history
+
+You can override the chat history by setting the messages property.
+
+This will *only* work if you bind the property as an array of messages: `{role: 'system' | 'assistant' | 'user', content: String}[]`.
+
+This is not going to work as simple html injection. From another LIT-element this would look like:
+
+```
+<chat-app 
+          .messages="${history}"
+></chat-app>
+```
