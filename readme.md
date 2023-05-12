@@ -42,6 +42,7 @@ Options can be adjusted easily:
         <!-- Required parameter for text-to-speech only. -->
         elevenlabsApiKey=" your api key "
         textToSpeechEnabled="false"
+        voice="VR6AewLTigWG4xSOukaG"
         
         <!-- These are default values. No need to define them but you can change the default values. -->
         gptResponseMaxCharacters="200"
@@ -97,6 +98,37 @@ Click on Profile
 Create and use the API key from your profile
 
 Use the API key in the HTML and you're done :) Happy voice!
+
+### What voices can I use?
+
+Rachel
+`21m00Tcm4TlvDq8ikWAM`
+
+Domi
+`AZnzlk1XvdvUeBnXmlld`
+
+Bella
+`EXAVITQu4vr4xnSDxMaL`
+
+Antoni
+`ErXwobaYiN019PkySvjV`
+
+Elli
+`MF3mGyEYCl7XYWbV9V6O`
+
+Josh
+`TxGEqnHWrfWFTfGW9XjX`
+
+Arnold
+`VR6AewLTigWG4xSOukaG`
+
+Adam
+`pNInz6obpgDQGcFmaJgB`
+
+Sam
+`yoZ06aMxZJJ28mfd3POQ`
+
+
 
 # Advanced stuff
 

@@ -12,6 +12,7 @@ export class ChatApp extends LitElement {
             elevenlabsStability: {type: Number},
             elevenlabsSimilarity: {type: Number},
             textToSpeechEnabled: {type: String},
+            voice: {type: String},
             engine: {type: String},
             // required properties
             openaiApiKey: {type: String},
@@ -30,6 +31,7 @@ export class ChatApp extends LitElement {
         this.elevenlabsSimilarity = 0;
         this.textToSpeechEnabled = false;
         this.engine = 'gpt-3.5-turbo';
+        this.voice = '21m00Tcm4TlvDq8ikWAM';
 
         this.openaiApiKey = localStorage.getItem('openaiApiKey');
         this.elevenlabsApiKey = localStorage.getItem('elevenlabsApiKey');
@@ -237,7 +239,7 @@ export class ChatApp extends LitElement {
 
     // Connects to Elevenlabs to create text to speech
     async textToSpeech(text) {
-        const LABS_VOICE_ID = '21m00Tcm4TlvDq8ikWAM';
+        const LABS_VOICE_ID = this.voice;
 
         const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${LABS_VOICE_ID}`, {
             method: 'POST',
