@@ -2,8 +2,8 @@
   "name": "gptdnd",
   "version": "1.0.0",
   "description": "And it is a free webcomponent.",
-  "main": "chat-app.js",
-  "module": "chat-app.js",
+  "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

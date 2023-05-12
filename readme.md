@@ -25,10 +25,10 @@ Without an openai API key the chat will work but it will be very lonely.
 ```
 <chat-app openaiApiKey=" your api key "></chat-app>
 
-<script src="chat-app.js" type="module"></script>
+<script src="index.js" type="module"></script>
 ```
 
-Make sure the file `chat-app.js` is in the path where you need it to be.
+Make sure the file `index.js` is in the path where you need it to be.
 
 ### Cool! But I want more options...
 

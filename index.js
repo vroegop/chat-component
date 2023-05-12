@@ -158,6 +158,8 @@ export class ChatApp extends LitElement {
                     />
                     <button @click="${this.sendMessage}">Send</button>
                 </div>
+
+                <chat-app></chat-app>
             </div>
         `;
     }
