@@ -18,6 +18,8 @@ Simply run the HTML file in a webserver and you are done. Note: you need NPM for
 
 ### Super easy setup
 
+Download the project from [github](https://github.com/vroegop/DNDGPT).
+
 Without an openai API key the chat will work but it will be very lonely.
 
 ```
@@ -56,6 +58,12 @@ Options can be adjusted easily:
         ]'
 ></chat-app>
 ```
+
+### And via NPM?
+
+npm install https://github.com/vroegop/DNDGPT
+
+
 
 ## How do I get a license for ChatGPT?
 
