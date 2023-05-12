@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; display: flex;">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body style="background-color: lightgray; flex-grow: 1; display: flex;">
+
+<chat-app
+        textToSpeechEnabled="false"
+        elevenlabsApiKey="7641a1018ce24df7c77fb64bdac201dc"
+        openaiApiKey="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"
+        gptResponseMaxCharacters="200"
+        gptResponseTemperature="0.5"
+        elevenlabsSimilarity="0"
+        elevenlabsStability="0"
+        prePrompt='[
+        {"role":"system","content":"Act like a DND dungeon master using 5e rules and after every prompt ask the user for input."},
+        {"role":"system","content":"Ask a user which characters will play and ask him for a character sheet of every character. Missing values can be made up. Show the character sheet after each creation and ask if there are others. If there are no more character sheets, ask the player to describe the world they play in. If you know what it looks like, begin the game."},
+        {"role":"assistant","content": "Greetings adventurer! Welcome to my realm. Please tell me the names of your characters and we will start with their character sheet after that."}
+        ]'
+></chat-app>
+
+<script src="chat-app.js" type="module"></script>
+</body>
+</html>
