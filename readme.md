@@ -46,6 +46,7 @@ Options can be adjusted easily:
         gptResponseTemperature="0.5"
         elevenlabsSimilarity="0"
         elevenlabsStability="0"
+        engine="gpt-3.5-turbo"
         
         <!-- This data will set your context for the chat. In this example, the chat will behave as DND Dungeon Master. -->
         prePrompt='[
@@ -121,15 +122,5 @@ This is not going to work as simple html injection. From another LIT-element thi
 ```
 <chat-app 
           .messages="${history}"
-></chat-app>
-```
-
-## I want to set a chat engine
-
-Easy:
-
-```
-<chat-app 
-          engine="gpt-3.5-turbo"
 ></chat-app>
 ```
