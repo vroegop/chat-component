@@ -61,9 +61,12 @@ Options can be adjusted easily:
 
 ### And via NPM?
 
-npm install https://github.com/vroegop/DNDGPT
+npm install https://github.com/vroegop/chat-component
 
-
+```
+<chat-app></chat-app>
+<script src="node_modules/chat-component/index.js" type="module"></script>
+```
 
 ## How do I get a license for ChatGPT?
 
